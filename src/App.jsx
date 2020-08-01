@@ -46,7 +46,11 @@ function App() {
             isDisabled={isLoading}
           />
           <div className="app__quote">
-            {isLoading ? <h3>Getting the data... </h3> : <Quote fact={fact} />}
+            {isLoading ? (
+              <h3 className="app__loading">Getting the data... </h3>
+            ) : (
+              <Quote fact={fact} />
+            )}
             {isError && <Error errorMessage={errorMessage} />}
           </div>
         </div>
