@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Quote = () => {
-  return <p></p>;
+const Quote = ({ fact }) => {
+  return <p>{fact}</p>;
 };
 
 export default Quote;
