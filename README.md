@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CHUCK NORRIS (Seez)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+A React applications that enables users to get facts about Chuck Norris. It also provides RTL text functionality
 
-### `yarn start`
+## Table of Contents
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. <a href="#hosted-app">Link to Hosted App</a>
+2. <a href="#workflow">Choices(Workflow)</a>
+3. <a href="#application-features">Application Features</a>
+4. <a href="#how-to-use">How To Use</a>
+5. <a href="#author">Author</a>
+6. <a href="#license">License</a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Link to Hosted App
 
-### `yarn test`
+- [App link](https://user-search-api-2020.herokuapp.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Workflow
 
-### `yarn build`
+- JavaScript Framework - [React Framework](https://reactjs.org/)
+- CSS - [CSS 3](https://www.w3schools.com/css/default.asp) - Didnt use any preprocessor or framework because I felt the scope of the app did not require it. I did make use of the [Bem methodology](http://getbem.com/introduction/) for naming css classes
+- State Management - [React Hooks](https://reactjs.org/docs/hooks-state.html) - Didnt use any external state management like Redux or MobX because I felt the scope of the app did not require it. Made use of useState hooks to store state in components
+- Testing - [Cypress](https://www.cypress.io/) - Use Cypress for E2E tests
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Application Features
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Get random facts about the awesome Chuck Norris
+- Toggle site view between LTR and RTL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How To Use
 
-### `yarn eject`
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone this repository
+$ git clone https://github.com/Makwe-O/Chucky-CN.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Go into the repository
+$ cd Chucky-CN
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install dependencies
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Run the app
+$ npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run test
+$ npm run cypress
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
+Mmakwe Onyeka
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT
