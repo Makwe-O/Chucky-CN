@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Button from './components/Button';
@@ -10,7 +10,18 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [isRTL, setIsRTL] = useState(false);
 
+  // UseEffect watches for changes in the isRTL state and makes changes to the dom
+  useEffect(() => {
+    if (isRTL) {
+      document.getElementsByTagName('html')[0].setAttribute('dir', 'rtl');
+      return;
+    }
+    document.getElementsByTagName('html')[0].setAttribute('dir', 'ltr');
+  }, [isRTL]);
+
+  //GetFact makes api call to the the chuck norris api and updates the state
   const getFact = () => {
     setIsError(false);
     setIsLoading(true);
@@ -31,6 +42,11 @@ function App() {
     <main>
       <div className="app__image"></div>
       <div className="app__main">
+        <Button
+          onClick={() => setIsRTL(!isRTL)}
+          buttonStyle={'btn btn--transparent app__toggleRTL'}
+          content="Toggle RTL"
+        />
         <div className="app__container">
           <img
             src="https://res.cloudinary.com/dnavbc7ny/image/upload/v1596279217/chuc_hjvfey.jpg"
@@ -41,7 +57,7 @@ function App() {
           <Header content="Get awesome facts about Chuck Norris" />
           <Button
             onClick={() => getFact()}
-            buttonStyle={'btn btn--primary'}
+            buttonStyle={'btn btn--primary app__getQuote'}
             content="Get Fact"
             isDisabled={isLoading}
           />
