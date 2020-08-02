@@ -25,6 +25,7 @@ A React applications that enables users to get facts about Chuck Norris. It also
 - CSS - [CSS 3](https://www.w3schools.com/css/default.asp) - Didnt use any preprocessor or framework because I felt the scope of the app did not require it. I did make use of the [Bem methodology](http://getbem.com/introduction/) for naming css classes
 - State Management - [React Hooks](https://reactjs.org/docs/hooks-state.html) - Didnt use any external state management like Redux or MobX because I felt the scope of the app did not require it. Made use of useState hooks to store state in components
 - Testing - [Cypress](https://www.cypress.io/) - Use Cypress for E2E tests
+- Hosting - [Netlify](https://www.netlify.com/)
 
 ## Application Features
 
