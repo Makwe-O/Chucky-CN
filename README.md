@@ -6,6 +6,8 @@ A React applications that enables users to get facts about Chuck Norris. It also
 
 ## Table of Contents
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08d6e242-5bb9-440e-b36c-ac1d180d8815/deploy-status)](https://app.netlify.com/sites/seez-chucknorris/deploys)
+
 1. <a href="#hosted-app">Link to Hosted App</a>
 2. <a href="#workflow">Choices(Workflow)</a>
 3. <a href="#application-features">Application Features</a>
@@ -15,7 +17,7 @@ A React applications that enables users to get facts about Chuck Norris. It also
 
 ## Link to Hosted App
 
-- [App link](https://user-search-api-2020.herokuapp.com/)
+- [App link](https://seez-chucknorris.netlify.app/)
 
 ## Workflow
 
